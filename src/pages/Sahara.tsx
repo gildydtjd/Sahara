@@ -5,7 +5,7 @@ const SaharaBox = styled.div`
   background-image: url('/assets/img/sahara3.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   height: 100vh;
 `;
 
