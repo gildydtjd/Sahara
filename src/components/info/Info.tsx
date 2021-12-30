@@ -20,7 +20,7 @@ const InfoBox = styled.div`
     align-items: center;
     height: 100vh;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1524px) {
     display: block;
     height: 100%;
   }
@@ -33,7 +33,7 @@ const LogoSpan = styled.span`
   font-size: 100px;
   padding: 10px 20px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1524px) {
     font-size: 30px;
     margin: 0;
     padding: 0;
@@ -54,15 +54,18 @@ const InfoLeft = styled.div`
   span {
     font-size: 25px;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1524px) {
     display: none;
+    transform: unset;
   }
 `;
 
 const InfoRight = styled.div`
   width: 50%;
-  @media screen and (max-width: 768px) {
+
+  @media screen and (max-width: 1524px) {
     width: 100%;
+    display: inline;
   }
 `;
 function Info() {

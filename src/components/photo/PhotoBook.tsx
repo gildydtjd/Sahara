@@ -5,7 +5,8 @@ import Photo from './Photo';
 const PhotoBookBox = styled.div`
   padding: 20px;
   text-align: center;
-  @media screen and (max-width: 768px) {
+
+  @media screen and (max-width: 1524px) {
     padding: 0;
   }
 `;

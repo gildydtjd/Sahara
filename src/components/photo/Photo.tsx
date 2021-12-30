@@ -21,9 +21,11 @@ const PhotoBox = styled.div`
   display: inline-block;
   cursor: pointer;
   transition: 0.5s;
+
   :hover {
     transform: translateY(-10px);
   }
+
   .photoInfo {
     display: flex;
     justify-content: center;
@@ -36,13 +38,16 @@ const PhotoBox = styled.div`
       font-size: 15px;
     }
   }
+  @media screen and (max-width: 1524px) {
+    padding: 0;
+    margin: 5%;
+    width: 30%;
+  }
 
   @media screen and (max-width: 768px) {
     padding: 0;
     margin: 5%;
     width: 80%;
-    .photoInfo {
-    }
   }
 `;
 
