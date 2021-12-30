@@ -1,19 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
-import Header from '../components/header/Header';
+import Info from '../components/info/Info';
 
 const SaharaBox = styled.div`
   background-image: url('/assets/img/sahara3.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
 `;
 
 function Sahara() {
   return (
     <SaharaBox>
-      <Header />
+      <Info />
     </SaharaBox>
   );
 }

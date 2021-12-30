@@ -1,5 +1,4 @@
-import { createGlobalStyle, keyframes } from 'styled-components';
-import normalize from 'styled-normalize';
+import { keyframes } from 'styled-components';
 
 export const neon = keyframes`
     0%,50%,100% {
@@ -9,17 +8,3 @@ export const neon = keyframes`
         0 0 120px #0fa;
     }
 `;
-
-const Globalstyle = createGlobalStyle`
-    ${normalize}
-
-    html,
-    body {
-        overflow: hidden;
-    }
-    * {
-    box-sizing: border-box;
-  }
-`;
-
-export default Globalstyle;
