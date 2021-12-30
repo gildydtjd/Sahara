@@ -36,6 +36,14 @@ const PhotoBox = styled.div`
       font-size: 15px;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    padding: 0;
+    margin: 5%;
+    width: 80%;
+    .photoInfo {
+    }
+  }
 `;
 
 function Photo({ url, title, info }: photoData) {

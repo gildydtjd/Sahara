@@ -13,13 +13,31 @@ const InfoBox = styled.div`
   font-family: 'Alfa Slab One', cursive;
   font-family: 'Nanum Gothic', sans-serif;
   font-family: 'Ubuntu', sans-serif;
+
+  .logoDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  @media screen and (max-width: 768px) {
+    display: block;
+    height: 100%;
+  }
 `;
+
 const LogoSpan = styled.span`
   animation: ${neon} 3s infinite alternate;
   margin: 0px 5%;
   cursor: pointer;
   font-size: 100px;
   padding: 10px 20px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+  }
 `;
 
 const InfoLeft = styled.div`
@@ -36,16 +54,24 @@ const InfoLeft = styled.div`
   span {
     font-size: 25px;
   }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const InfoRight = styled.div`
   width: 50%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 function Info() {
   return (
     <>
       <InfoBox>
-        <LogoSpan {...useScrollFadeIn('left', 1, 0)}>SAHARA</LogoSpan>
+        <div className="logoDiv">
+          <LogoSpan {...useScrollFadeIn('left', 1, 0)}>SAHARA</LogoSpan>
+        </div>
       </InfoBox>
       <InfoBox>
         <InfoLeft {...useScrollFadeIn('left', 1, 0)}>

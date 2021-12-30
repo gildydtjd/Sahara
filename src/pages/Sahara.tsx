@@ -10,6 +10,10 @@ const SaharaBox = styled.div`
   background-attachment: fixed;
   height: 100%;
   width: 100%;
+
+  @media screen and (max-width: 500px) {
+    background-size: cover;
+  }
 `;
 
 function Sahara() {

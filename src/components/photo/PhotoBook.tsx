@@ -5,6 +5,9 @@ import Photo from './Photo';
 const PhotoBookBox = styled.div`
   padding: 20px;
   text-align: center;
+  @media screen and (max-width: 768px) {
+    padding: 0;
+  }
 `;
 
 const bookData = [
