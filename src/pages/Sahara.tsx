@@ -13,6 +13,7 @@ const SaharaBox = styled.div`
 
   @media screen and (max-width: 1524px) {
     background-size: cover;
+    position: sticky;
   }
 `;
 
