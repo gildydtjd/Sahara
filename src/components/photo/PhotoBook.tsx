@@ -38,8 +38,15 @@ function PhotoBook() {
   return (
     <>
       <PhotoBookBox>
-        {bookData.map((data) => {
-          return <Photo url={data.url} title={data.title} info={data.info} />;
+        {bookData.map((data, key) => {
+          return (
+            <Photo
+              key={key}
+              url={data.url}
+              title={data.title}
+              info={data.info}
+            />
+          );
         })}
       </PhotoBookBox>
     </>
