@@ -13,7 +13,11 @@ const SaharaBox = styled.div`
 
   @media screen and (max-width: 1524px) {
     background-position: top;
-    background-image: url('assets/img/sahara5.jpg');
+  }
+
+  @media screen and (max-width: 628px) {
+    background-position: top;
+    background-image: url('/assets/img/sahara6.jpg');
   }
 `;
 
