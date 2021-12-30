@@ -12,7 +12,6 @@ const SaharaBox = styled.div`
   width: 100%;
 
   @media screen and (max-width: 1524px) {
-    background-size: auto;
     background-position: top;
   }
 `;
