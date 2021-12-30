@@ -6,7 +6,6 @@ const Globalstyle = createGlobalStyle`
         -ms-overflow-style: none; /* IE, Edge */
         scrollbar-width: none; /* Firefox */
     }
-
     body::-webkit-scrollbar {
         display: none;
     }

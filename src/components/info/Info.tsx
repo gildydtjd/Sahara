@@ -4,6 +4,22 @@ import useScrollFadeIn from '../../hooks/useScrollFadeIn';
 import { neon } from '../../styles/style';
 import PhotoBook from '../photo/PhotoBook';
 
+const SaharaBox = styled.div`
+  background-image: url('/assets/img/sahara3.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+
+  @media screen and (max-width: 628px) {
+    background-image: url('/assets/img/sahara6.jpg');
+  }
+`;
+
 const InfoBox = styled.div`
   height: 100vh;
   display: flex;
@@ -21,7 +37,6 @@ const InfoBox = styled.div`
     height: 100vh;
   }
   @media screen and (max-width: 1524px) {
-    display: block;
     height: 100%;
   }
 `;
@@ -71,6 +86,7 @@ const InfoRight = styled.div`
 function Info() {
   return (
     <>
+      <SaharaBox />
       <InfoBox>
         <div className="logoDiv">
           <LogoSpan {...useScrollFadeIn('left', 1, 0)}>SAHARA</LogoSpan>
